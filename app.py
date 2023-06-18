@@ -33,7 +33,7 @@ def apiDeteksi():
         input_Rerata_Lama_Sekolah = float(request.form['Rerata_Lama_Sekolah'])
         input_Usia_Harapan_Hidup = float(request.form['Usia_Harapan_Hidup'])
 
-        # Prediksi kelas atau spesies bunga iris berdasarkan data pengukuran yg diberikan pengguna
+        # Prediksi kelas
         df_test = pd.DataFrame(data={
             "Harapanlamasekolah": [input_Harapan_Lama_Sekolahh],
             "Pengeluaranperkapita": [input_Pengeluaran_Perkapita],
